@@ -25,7 +25,7 @@ public class BaseTest {
         casinoMainPage.registerNewPlayer(random_postfix);
         casinoMainPageAutorizeZone = new CasinoMainPageAutorizeZone(driver);
         player_name = casinoMainPageAutorizeZone.getPlayerName();
-        Assert.assertEquals("Player has registered","darya.dmitrochenko+" + random_postfix + "@gmail.com", player_name);
+        Assert.assertEquals("darya.dmitrochenko+" + random_postfix + "@gmail.com", player_name);
     }
     @AfterClass
     public static void tearDown() {
